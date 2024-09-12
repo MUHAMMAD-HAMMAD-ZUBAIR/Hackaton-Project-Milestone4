@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> <u>EDITABLE RESUME BUILDER BY </u><br><u>MUHAMMAD HAMMAD ZUBAIR</u></h1>
+   
+    <form id="resume-form">
+    <fieldset>
+        <!-- Personal Info -->
+        <legend> Personal Informtion</legend>
+        <label for="name" > Name :</label>
+        <input type="text" id="name" placeholder="Enter Your Name" required><br>
+        <label for="email"> Email :</label>
+        <input type="text" id="email" placeholder="Enter Your Email" required > <br>
+        <label for="phone"> Phone :</label>
+        <input type="tel" id="phone"  placeholder="Enter Your Phone Number"required> <br>
+    </fieldset>
+
+    <!-- Education -->
+     <fieldset>
+    <legend>Education</legend>
+    <label for="education">Education</label><br>
+    <textarea id="education" placeholder="Enter Your Education" rows="4" required></textarea> 
+</fieldset>
+   
+<!-- Experience -->
+    <fieldset>
+        <legend>Experience</legend>
+        <label for="experience">Experience</label><br>
+        <textarea id="experience" placeholder="Enter Your Experience"  rows="4" required></textarea><br>
+    </fieldset>
+
+    <!-- Skills -->
+    <fieldset>
+        <legend>Skills</legend>
+        <label for="skills">Skills</label><br>
+        <textarea id="skills" placeholder="Enter Your Skills"  rows="4" required></textarea><br>
+    </fieldset>
+
+    <button type="submit"> Generate Resume Below </button>
+</form>
+<br>
+<!-- Resume Will Be Generator Below -->
+<div id="resume-display" contenteditable="true">    
+</div>
+<script src="main.js"></script>
+
+</body>
+</html>
